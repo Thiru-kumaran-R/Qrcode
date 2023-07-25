@@ -1,0 +1,169 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(32deg, #05BFDB, #00FFC6);
+}
+
+.container{
+    height: 250px;
+    width: 500px;
+    border-radius: 40px;
+    overflow: hidden;
+    background-color: #fff;
+    transition:0.6s ease-out;
+}
+
+.container.active{
+    height: 700px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box>.heading{
+    display: flex;
+    height: 100px;
+    align-items: center;
+}
+
+.heading>h1{
+    font-weight: 900;
+    font-size: 35px;
+}
+
+.form-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+}
+
+.form-details  input {
+    display: block;
+    height: 40px;
+    border-radius: 18px;
+    width: 100%;
+    border : 2px solid rgb(157, 178, 191, 0.5); 
+}
+
+.form-details  input:focus{
+    border : 2px solid rgb(157, 178, 191, 0.9);
+}
+
+.form-details  input::placeholder{
+    font-size: 15px;
+}
+
+.form-details  input[type=text]{
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+.form-details  button {
+    display: block;
+    height: 45px;
+    border-radius: 28px;
+    width: 100%;
+    background: linear-gradient(32deg, #05BFDB, #00FFC6);
+    border: none;
+    font-size: 28px;
+    font-weight: 900;
+    color: #fff;
+}
+
+.qr-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    scale: 0;
+    opacity: 0;
+}
+
+.download-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    scale: 0;
+    opacity: 0;
+}
+
+.download-item > button{
+  background: linear-gradient(32deg, #05BFDB, #00FFC6);
+  width: 80%;
+  height: 45px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 900;
+  border-radius: 28px;
+  border: none;
+}
+
+.fadeIn{
+    animation : 0.5s fadeIn forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+    to{
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        height: 300px;
+        width: 340px;
+        border-radius: 40px;
+        overflow: hidden;
+        background-color: #fff;
+        transition:0.6s ease-out;
+    }
+
+    .heading{
+        text-align: center;
+        margin: 20px;
+    }
+
+    .container.active{
+        height: 550px;
+    }
+
+    .qr-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 230px;
+        scale: 0;
+        opacity: 0;
+    }
+
+
+}
