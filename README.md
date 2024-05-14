@@ -7,6 +7,6 @@ Javascript, HTML, and CSS were used to create this project. Any text can be conv
 ## Demo
 
 This project is published online via github which can be accessed through the following link:
-https://thirukumaran05.github.io/Qrcode/
+ https://thiru-kumaran-r.github.io/Qrcode/
 
 
